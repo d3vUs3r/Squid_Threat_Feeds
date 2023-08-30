@@ -34,7 +34,7 @@ git clone https://github.com/squid-security-update-script.git
   ```
 ```Note:```  Make sure to modify the script according to your system's paths and requirements before executing it.
 
-##Configuration
+## Configuration
 
 Before running the script, ensure that the following are correctly configured:
 
@@ -42,6 +42,6 @@ Before running the script, ensure that the following are correctly configured:
     URLs for the bad URL and bad IP address data sources.
     Squid configuration file paths.
 
-##Schedule Tasks
+## Schedule Tasks
 
 The script includes an option to schedule tasks using cron. This ensures that the bad URL and bad IP address lists are regularly updated. By default, tasks are scheduled to run every 3 hours. You can modify the cron schedule by editing the script.
