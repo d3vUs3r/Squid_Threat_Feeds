@@ -1,0 +1,8 @@
+
+##########################################################################################################
+#  list of potentially malicious IP addresses from a known source (Feodo Tracker Botnet C2 IP Blocklist) #
+##########################################################################################################
+
+# BeginFeodotrackerBadIPs
+
+# EndFeodotrackerBadIPs

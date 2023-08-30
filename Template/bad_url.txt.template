@@ -1,0 +1,9 @@
+
+##########################################################################################################
+#  list of potentially malicious URL  from a known source (URLhaus database's CSV data) 		#	
+#  https://urlhaus.abuse.ch/downloads/csv_online/							#
+##########################################################################################################
+
+# BeginAbuseFeedBadURLs
+
+# EndbuseFeedBadURLs
