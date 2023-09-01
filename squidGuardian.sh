@@ -6,7 +6,7 @@ update_squid_bad_urls() {
     local output_file="data/urlhaus_data.csv"
     local extracted_urls_file="extracted_urls.txt"
     local squid_bad_url_file="/etc/squid/bad_url.txt"
-    local archive_folder="archive/"
+    local archive_folder="archive/update_squid_bad_urls/"
     local temp_file="data/temp.csv"
 
 
@@ -64,7 +64,7 @@ update_IpFeed_Feodotracker() {
     local output_file="data/bad_ips_data.txt"
     local extracted_ips_file="extracted_ips.txt"
     local config_file="/etc/squid/bad_ips.txt"
-    local archive_folder="archive/"
+    local archive_folder="archive/update_IpFeed_Feodotracker/"
     local temp_file="data/temp.txt"
 
 
@@ -192,7 +192,12 @@ run_setup() {
         echo "Squid has been installed."
 
     fi
-
+   # Create the necessary folders
+    mkdir -p logs
+    mkdir -p data
+    mkdir -p archive/update_IpFeed_Feodotracker
+    mkdir -p archive/update_squid_bad_urls
+ 
     # Check if the files exist in the Template folder
     if [ -f "Template/$file1" ] && [ -f "Template/$file2" ]; then
         # Copy the files to the current folder
